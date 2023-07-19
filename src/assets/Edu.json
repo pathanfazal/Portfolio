@@ -1,0 +1,22 @@
+{
+  "milestones": [
+    {
+      "title": "BE Artificial Intelligence and Data Science",
+      "address": "K. K. Wagh Institute Of Engineering Education And Research - Nashik",
+      "highlights": ["CGPA: 8.39"] ,
+      "year": "2021 - 2024"
+    },
+    {
+      "title": "Diploma in Electronics and Tele-communication",
+      "address": "K. K. Wagh Polytechnic, Nashik",
+      "highlights": ["Percentage: 93.53%"],
+      "year": "2018 - 2021"
+    },
+    {
+      "title": "SSC",
+      "address": "St. Sadique School, Wadalagaon, Nashik",
+      "highlights": ["Percentage: 77.60%"],
+      "year": "2017 - 2018"
+    }
+  ]
+}

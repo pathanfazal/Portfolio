@@ -1,0 +1,30 @@
+.description{
+    padding: 0.5rem 2rem;
+    text-align: justify;
+    margin: 2rem 5rem;
+    border-radius: 25px;
+    width: 50rem;
+    border: solid var(--color-primary);
+}
+
+.description:hover{
+    background-color: #DED7EC;
+    
+    margin: 1rem 2.5 rem;
+}
+
+.project_container{
+    display: flex;
+    
+}
+
+@media screen and (max-width:1024px){
+    .project_container{
+        display: inline;
+    }
+
+    .description{
+        width: auto;
+
+    }
+}
