@@ -1,6 +1,6 @@
 # View Portfolio
 
-View My Portfolio [Portfolio](https://pathanfazal.github.io/portfolio/).
+View My [Portfolio](https://pathanfazal.github.io/portfolio/).
 
 ## Available Scripts
 
