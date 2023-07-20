@@ -1,0 +1,35 @@
+.content_skill {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    
+    background-color: var(--bg-white);
+    box-shadow: var(--box-shadow);
+    /* border-radius: var(--box-border-radius); */
+    /* transform: translateY(-50%); */
+    padding: 1rem 1rem;
+  }
+
+  li{
+    margin-top:  0.5rem;
+  }
+
+  @media (max-width: 800px) {
+    .skills{
+      margin-bottom: -1rem;
+    }
+    .content_skill{
+      /* background-color: red; */
+      gap: 1rem;
+      align-items: center;
+      flex-direction: column;
+    }
+    li{
+      text-align: center;
+    }
+  }
+
+  h3{
+    text-align: center;
+  }

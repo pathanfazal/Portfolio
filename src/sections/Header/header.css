@@ -1,0 +1,88 @@
+/* Common styles for all views */
+header {
+  margin-top: 5rem;
+  height: calc(100vh - 5rem);
+  display: grid;
+  place-items: center;
+  background: var(--color-white);
+  transition: var(--transition);
+  position: relative; /* Ensure the social icons position themselves correctly */
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: var(--container-width-lg);
+  padding: 0 1rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header__profile {
+  width: 18rem;
+  height: 18rem; /* Set a specific height for the profile image */
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 1.5rem;
+}
+
+.header__container p {
+  text-align: justify;
+  margin: 0.6rem 0 1rem;
+  max-width: 35rem; /* Set a maximum width for the paragraph */
+}
+
+.header__socials{
+  align-items: center;
+}
+
+.header__socials {
+  /* position: absolute; */
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row; /* Align the social icons horizontally */
+  gap: 1rem;
+  align-items: center; /* Vertically align the social icons */
+}
+
+.header__socials a {
+  width: 2rem; /* Set a fixed width for the social icons */
+  height: 2rem; /* Set a fixed height for the social icons */
+  background: var(--color-light);
+  color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-3);
+}
+
+.header__socials a:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  transform: translateX(-0.5rem);
+}
+
+/* MEDIA QUERIES (TABLETS) */
+@media screen and (max-width: 1024px) {
+  header {
+    margin-top: 0;
+    height: 100vh;
+  }
+
+  .header__profile {
+    width: 12rem; /* Adjust the profile image size for tablets */
+    height: 12rem;
+  }
+}
+
+/* MEDIA QUERIES (PHONES) */
+@media screen and (max-width: 600px) {
+  .header__profile {
+    margin-top: 8rem;
+    width: 8rem; /* Adjust the profile image size for phones */
+    height: 8rem;
+  }
+}
