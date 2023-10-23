@@ -1,24 +1,41 @@
-import React from 'react'
-import './projects.css'
-import data from './data'
+import React from "react";
+import data from "./data";
+import "./projects.css";
 
-const Projects = () => {
+const Project = () => {
   return (
-    <section id="projects"><h2>Projects</h2>
-    <div className="project_container">
-    {
-      data.map(item=>(
-        <li key={item.id} className='description'>
-          <h4>{item.title}</h4>
-          <p>{item.desc}</p>
-          <a href={item.link}>
-          {item.icon}</a>
-          </li>
-      ))
-    }
-    </div>
-    </section>
-  )
-}
+    <div id="pro">
+      <h1 className="section-header" style={{ "--x": "5%", "--y": "1rem" }}>
+        Projects
+      </h1>
+      {data.map((project, index) => (
+        <div className="project-container" key={index}>
+          <div className="project-card">
+            <h2 className="project-title">{project.title}</h2>
+            {project.vidsrc && ( // Conditionally render the video element
+              <video controls>
+                <source src={project.vidsrc} type="video/mp4" />
+              </video>
+            )}
 
-export default Projects
+            <div className="pro-details">
+              <p>{project.text}</p>
+              <div className="pro-btns">
+                <button className="btn">
+                  <a href={project.source}>Source</a>
+                </button>
+                {project.view && ( // Conditionally render the "View" button
+                  <button className="btn">
+                    <a href={project.view}>View</a>
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Project;
