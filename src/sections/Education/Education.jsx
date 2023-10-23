@@ -14,6 +14,7 @@ const Education = () => {
       ref={sectionRef}
     >
       <h1 className="section-header" style={{ "--x": "5%", "--y": "1rem" }}>
+        Education
       </h1>
       <div className="timeline">
         <ul>
