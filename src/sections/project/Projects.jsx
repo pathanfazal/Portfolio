@@ -4,7 +4,7 @@ import "./projects.css";
 
 const Project = () => {
   return (
-    <div id="pro">
+    <div id="projects">
       <h1 className="section-header" style={{ "--x": "5%", "--y": "1rem" }}>
         Projects
       </h1>
